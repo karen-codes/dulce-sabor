@@ -1,20 +1,112 @@
 /* estilos.css - Estilos base para Dulce Sabor */
 
 body {
-    background-color: #fff8f0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #4b2e2e;
+  background-color: #fff8f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #4b2e2e;
 }
 
 .container {
-    width: 900px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 header, footer {
-    background-color: #f4d3c2;
-    padding: 1em;
-    margin-bottom: 1em;
+  background-color: #f4d3c2;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* ✅ 1. Estilo para enlaces del menú */
+nav a {
+  text-decoration: none;
+  color: #4b2e2e;
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+/* ✅ 2. Cambiar color al pasar el mouse */
+nav a:hover {
+  color: #d16e6e;
+}
+
+/* ✅ 3. Estilo para productos */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto {
+  width: 250px;
+  border: 1px solid #e7b8a5;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ✅ 4. Imágenes responsivas y uniformes */
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ✅ 5. Botones */
+button {
+  background-color: #d16e6e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b95858;
+}
+
+/* ✅ Responsividad */
+@media (max-width: 600px) {
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto {
+    width: 90%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Centrado del contenido del index */
+.contenido-central {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+/* Estilo para la imagen destacada en el index */
+.destacado {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  display: block; 
+  margin: 1em auto; 
+}
+
+/* Títulos secundarios */
+h2 {
+  color: #8b4a4a;
 }
