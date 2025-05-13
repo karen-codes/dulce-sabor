@@ -1,0 +1,20 @@
+/* estilos.css - Estilos base para Dulce Sabor */
+
+body {
+    background-color: #fff8f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #4b2e2e;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #f4d3c2;
+    padding: 1em;
+    margin-bottom: 1em;
+}
