@@ -77,4 +77,116 @@ nav a:hover {
   height: fit-content;
 }
 
+.carrito-items {
+  margin: 1em 0;
+}
+
+.item-carrito p {
+  margin: 0.5em 0;
+}
+
+.btn-comprar {
+  width: 100%;
+  background-color: #8b4a4a;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-comprar:hover {
+  background-color: #6e3c3c;
+}
+
+/* Botones generales */
+button {
+  background-color: #d16e6e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #b95858;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tienda-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productos, .panel-carrito {
+    width: 90%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .producto {
+    width: 90%;
+  }
+}
+
+/* Otros estilos */
+.contenido-central {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.destacado {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+h2 {
+  color: #8b4a4a;
+}
+
+/* Diseño horizontal para contacto */
+.contacto-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+#resumen-compra {
+  flex: 1;
+  background-color: #fef3e7;
+  padding: 1.5em;
+  border: 1px solid #dcbfa5;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+#form-contacto {
+  flex: 1;
+  max-width: 45%;
+}
+
+#panel-confirmacion {
+  margin-top: 2em;
+}
+
+.mensaje-reset {
+  display: none;
+  margin-top: 1em;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
 
