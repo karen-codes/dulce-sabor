@@ -38,3 +38,43 @@ nav a:hover {
   gap: 2em;
 }
 
+/* Productos */
+.tienda-layout .productos {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto {
+  width: 250px;
+  border: 1px solid #e7b8a5;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Panel carrito sticky */
+.panel-carrito {
+  width: 260px;
+  background-color: #fef3e7;
+  padding: 1.5em;
+  border: 1px solid #dcbfa5;
+  border-radius: 10px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 1em;
+  align-self: flex-start;
+  height: fit-content;
+}
+
+
