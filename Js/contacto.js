@@ -54,7 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
     form.style.display = "none";
     panel.style.display = "block";
     resumenCompra.style.display = "none";
-   // Limpiar almacenamiento y formulario
+
+    // Limpiar almacenamiento y formulario
     localStorage.removeItem("carritoDetalle");
     form.reset();
   });
@@ -65,21 +66,22 @@ document.addEventListener("DOMContentLoaded", () => {
     panel.style.display = "none";
     datosFinales.innerHTML = "";
   });
-});
 
-form.addEventListener("reset", () => {
-  resumenCompra.innerHTML = "";
-  resumenCompra.style.display = "none";
-  localStorage.removeItem("carritoDetalle");
+  // Manejar botón de reset
+  form.addEventListener("reset", () => {
+    resumenCompra.innerHTML = "";
+    resumenCompra.style.display = "none";
+    localStorage.removeItem("carritoDetalle");
 
-  const mensajeReset = document.getElementById("mensaje-reset");
-  mensajeReset.textContent = "Formulario y resumen restablecidos correctamente.";
-  mensajeReset.style.display = "block";
+    const mensajeReset = document.getElementById("mensaje-reset");
+    mensajeReset.textContent = "Vuelve pronto, te esperamos <3 .";
+    mensajeReset.style.display = "block";
 
-  setTimeout(() => {
-    mensajeReset.style.display = "none";
-    mensajeReset.textContent = "";
-  }, 3000);
+    setTimeout(() => {
+      mensajeReset.style.display = "none";
+      mensajeReset.textContent = "";
+    }, 3000);
+  });
 });
 
 
