@@ -19,40 +19,27 @@
 
       <main>
         <h2>Formulario de Contacto</h2>
-        <form action="#" method="POST">
-          <label for="nombre">Nombre:</label><br />
-          <input type="text" id="nombre" name="nombre" required /><br /><br />
 
-          <label for="email">Correo electrónico:</label><br />
-          <input type="email" id="email" name="email" required /><br /><br />
+        <!-- Sección en dos columnas -->
+        <div class="contacto-layout">
+          <!-- Resumen de la compra -->
+          <div id="resumen-compra"></div>
 
-          <label for="tipo_pastel">Tipo de pastel:</label><br />
-          <select id="tipo_pastel" name="tipo_pastel" required>
-            <option value="">Seleccione una opción</option>
-            <option value="chocolate">Chocolate</option>
-            <option value="vainilla">Vainilla</option>
-            <option value="frutas">Frutas</option>
-            <option value="red_velvet">Red Velvet</option>
-            <option value="zanahoria">Zanahoria</option>
-            <option value="cheesecake">Cheesecake</option>
-          </select><br /><br />
+          <!-- Formulario de contacto -->
+          <form id="form-contacto">
+            <label for="nombre">Nombre completo:</label><br />
+            <input type="text" id="nombre" name="nombre" required /><br /><br />
 
-          <label for="comentarios">Comentarios:</label><br />
-          <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea><br /><br />
+            <label for="email">Correo electrónico:</label><br />
+            <input type="email" id="email" name="email" required /><br /><br />
 
-          <label>
-            <input type="checkbox" name="terminos" required />
-            Acepto los términos y condiciones
-          </label><br /><br />
+            <label for="telefono">Número de celular:</label><br />
+            <input type="tel" id="telefono" name="telefono" required /><br /><br />
 
-          <button type="submit">Enviar</button>
-          <button type="reset">Restablecer</button>
-        </form>
-      </main>
+            <label for="comentarios">Comentarios:</label><br />
+            <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea><br /><br />
 
-      <footer>
-        <p>Visítanos y endulza tu día 🍰 © 2025 Dulce Sabor</p>
-      </footer>
-    </div>
-  </body>
-  </html>
+            <label>
+              <input type="checkbox" name="terminos" required />
+              Acepto los términos y condiciones
+            </label><br /><br />
