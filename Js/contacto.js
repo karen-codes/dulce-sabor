@@ -54,4 +54,32 @@ document.addEventListener("DOMContentLoaded", () => {
     form.style.display = "none";
     panel.style.display = "block";
     resumenCompra.style.display = "none";
-   
+   // Limpiar almacenamiento y formulario
+    localStorage.removeItem("carritoDetalle");
+    form.reset();
+  });
+
+  // Botón OK: volver a mostrar formulario vacío
+  btnOK.addEventListener("click", () => {
+    form.style.display = "block";
+    panel.style.display = "none";
+    datosFinales.innerHTML = "";
+  });
+});
+
+form.addEventListener("reset", () => {
+  resumenCompra.innerHTML = "";
+  resumenCompra.style.display = "none";
+  localStorage.removeItem("carritoDetalle");
+
+  const mensajeReset = document.getElementById("mensaje-reset");
+  mensajeReset.textContent = "Formulario y resumen restablecidos correctamente.";
+  mensajeReset.style.display = "block";
+
+  setTimeout(() => {
+    mensajeReset.style.display = "none";
+    mensajeReset.textContent = "";
+  }, 3000);
+});
+
+
