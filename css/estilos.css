@@ -1,3 +1,27 @@
+header {
+  position: relative;
+  padding: 1rem;
+  background-color: #f4d3c2;
+  text-align: center;
+}
+
+.logo-titulo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.titulo-principal {
+  margin: 30;
+  font-size: 2rem;
+}
+
+
 body {
   background-color: #fff8f0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -48,7 +72,7 @@ nav a:hover {
 }
 
 .producto {
-  width: 250px;
+  width: 200px;
   border: 1px solid #e7b8a5;
   padding: 1em;
   background-color: #fff;
