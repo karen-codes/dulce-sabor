@@ -62,5 +62,31 @@ function agregarProducto(producto) {
 
   actualizarCarrito();
 }
+function actualizarCarrito() {
+  carritoHTML.innerHTML = "";
+  let subtotal = 0;
 
+  const items = Object.values(carrito);
+  if (items.length === 0) {
+    carritoHTML.innerHTML = "<p>El carrito está vacío.</p>";
+  } else {
+    items.forEach((item) => {
+      const totalItem = item.precio * item.cantidad;
+      subtotal += totalItem;
+
+      const div = document.createElement("div");
+      div.classList.add("item-carrito");
+      div.innerHTML = `<p>${item.nombre} x ${item.cantidad} = $${totalItem.toFixed(2)}</p>`;
+      carritoHTML.appendChild(div);
+    });
+  }
+
+  const iva = subtotal * 0.15;
+  const total = subtotal + iva;
+
+  subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+  ivaEl.textContent = `$${iva.toFixed(2)}`;
+  totalEl.textContent = `$${total.toFixed(2)}`;
+
+}
 
