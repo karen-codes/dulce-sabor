@@ -45,3 +45,22 @@ document.addEventListener("DOMContentLoaded", () => {
       total: total.toFixed(2),
     }));
 
+     // Redirigir al formulario
+    window.location.href = "contacto.html";
+  });
+});
+
+function agregarProducto(producto) {
+  if (carrito[producto.id]) {
+    carrito[producto.id].cantidad += 1;
+  } else {
+    carrito[producto.id] = {
+      ...producto,
+      cantidad: 1,
+    };
+  }
+
+  actualizarCarrito();
+}
+
+
