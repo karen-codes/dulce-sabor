@@ -37,3 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const iva = subtotal * 0.15;
     const total = subtotal + iva;
 
+    // Guardar en localStorage
+    localStorage.setItem("carritoDetalle", JSON.stringify({
+      productos: detalle,
+      subtotal: subtotal.toFixed(2),
+      iva: iva.toFixed(2),
+      total: total.toFixed(2),
+    }));
+
