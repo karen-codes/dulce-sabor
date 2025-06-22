@@ -6,59 +6,76 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Nuestros Pasteles</h1>
-        <nav>
-          <a href="index.html">Inicio</a>
-          <a href="tienda.html">Tienda</a>
-          <a href="contacto.html">Contacto</a>
-        </nav>
-      </header>
+    <header>
+      <h1>Nuestros Pasteles</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
 
-      <main>
-        <section class="productos">
-          <div class="producto">
-            <img src="img/pastel-chocolate.jpg" alt="Pastel de Chocolate">
-            <h3>Pastel de Chocolate</h3>
-            <p>$15.00</p>
-          </div>
+    <main class="tienda-layout container">
+      <section class="productos">
+        <div class="producto">
+          <img src="img/pastel-chocolate.jpg" alt="Pastel de Chocolate">
+          <h3>Pastel de Chocolate</h3>
+          <p>$15.00</p>
+          <button>Agregar</button>
+        </div>
 
-          <div class="producto">
-            <img src="img/pastel-vainilla.jpg" alt="Pastel de Vainilla">
-            <h3>Pastel de Vainilla</h3>
-            <p>$13.50</p>
-          </div>
+        <div class="producto">
+          <img src="img/pastel-vainilla.jpg" alt="Pastel de Vainilla">
+          <h3>Pastel de Vainilla</h3>
+          <p>$13.50</p>
+          <button>Agregar</button>
+        </div>
 
-          <div class="producto">
-            <img src="img/pastel-frutas.jpg" alt="Pastel de Frutas">
-            <h3>Pastel de Frutas</h3>
-            <p>$16.00</p>
-          </div>
+        <div class="producto">
+          <img src="img/pastel-frutas.jpg" alt="Pastel de Frutas">
+          <h3>Pastel de Frutas</h3>
+          <p>$16.00</p>
+          <button>Agregar</button>
+        </div>
 
-          <div class="producto">
-            <img src="img/pastel-redvelvet.jpg" alt="Red Velvet">
-            <h3>Red Velvet</h3>
-            <p>$17.00</p>
-          </div>
+        <div class="producto">
+          <img src="img/pastel-redvelvet.jpg" alt="Red Velvet">
+          <h3>Red Velvet</h3>
+          <p>$17.00</p>
+          <button>Agregar</button>
+        </div>
 
-          <div class="producto">
-            <img src="img/pastel-zanahoria.jpg" alt="Pastel de Zanahoria">
-            <h3>Pastel de Zanahoria</h3>
-            <p>$14.00</p>
-          </div>
+        <div class="producto">
+          <img src="img/pastel-zanahoria.jpg" alt="Pastel de Zanahoria">
+          <h3>Pastel de Zanahoria</h3>
+          <p>$14.00</p>
+          <button>Agregar</button>
+        </div>
 
-          <div class="producto">
-            <img src="img/pastel-cheesecake.jpg" alt="Cheesecake">
-            <h3>Cheesecake</h3>
-            <p>$18.50</p>
-          </div>
-        </section>
-      </main>
+        <div class="producto">
+          <img src="img/pastel-cheesecake.jpg" alt="Cheesecake">
+          <h3>Cheesecake</h3>
+          <p>$18.50</p>
+          <button>Agregar</button>
+        </div>
+      </section>
 
-      <footer>
-        <p>Visítanos y endulza tu día 🍰 © 2025 Dulce Sabor</p>
-      </footer>
-    </div>
+      <aside class="panel-carrito">
+        <h3>Tu Carrito</h3>
+        <hr />
+        <div class="carrito-items">El carrito está vacío.</div>
+        <hr />
+        <p>Subtotal: <span class="subtotal">$0.00</span></p>
+        <p>IVA (15%): <span class="iva">$0.00</span></p>
+        <p><strong>Total: <span class="total">$0.00</span></strong></p>
+        <button class="btn-comprar">Comprar</button>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Visítanos y endulza tu día 🍰 © 2025 Dulce Sabor</p>
+    </footer>
+
+    <script src="Js/tienda.js"></script>
   </body>
 </html>
